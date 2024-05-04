@@ -10,7 +10,7 @@ rem Commit changes with a default message
 git commit -m "Deleted btach script from repository commit"
 
 rem Set the remote origin
-git remote add origin https://github.com/nexustech101/Java/tree/main/Algorithms%20%26%20Data%20Structures
+git remote add origin https://github.com/nexustech101/Java/tree/main/Algorithms%20%26%20Data%20Structures.git
 
 rem Push changes to the main branch of the remote repository
 git push -u origin main
