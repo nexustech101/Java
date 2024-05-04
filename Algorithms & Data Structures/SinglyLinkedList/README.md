@@ -37,40 +37,32 @@ public class Main {
 
 ## Methods
 
-##### `add(int n)`
-Adds an element to the end of the list.
+### Overview of Methods
+Below is a detailed description of the methods provided by the `SinglyLinkedList` class:
 
-##### `add(int index, int element)`
-Inserts an element at the specified position. The index must be within the bounds of the list size.
+### Adding Elements
+- **`add(int n)`**: Adds an element to the end of the list.
+- **`add(int index, int element)`**: Inserts an element at the specified position within the list. Validates that the index is within the current bounds.
+- **`addFirst(int element)`**: Inserts an element at the beginning of the list, equivalent to `add(0, element)`.
+- **`addLast(int element)`**: Appends an element to the end of the list, functionally identical to `add(int n)`.
 
-##### `addFirst(int element)`
-Inserts an element at the beginning of the list. This is equivalent to `add(0, element)`.
+### Removing Elements
+- **`removeFirst()`**: Removes and returns the first element of the list. If the list is empty, throws an `IllegalStateException`.
+- **`removeLast()`**: Removes and returns the last element of the list. Also throws an `IllegalStateException` if the list is empty.
 
-##### `addLast(int element)`
-Appends an element to the end of the list. Functionally similar to `add(int n)`.
+### Peeking Elements
+- **`peek()`, `peekFirst()`**: Retrieves but does not remove the first element of the list. Returns `null` if the list is empty.
+- **`peekLast()`**: Retrieves but does not remove the last element of the list. Also returns `null` if the list is empty.
 
-##### `removeFirst()`
-Removes and returns the first element of the list. If the list is empty, throws an `IllegalStateException`.
+### List Manipulation
+- **`reverse()`**: Reverses the order of the elements in the list. Throws an `IllegalStateException` if the list is empty.
+- **`sort()`**: Sorts the elements of the list and returns a new instance of the sorted list. If the list is empty, throws an `IllegalStateException`.
 
-##### `removeLast()`
-Removes and returns the last element of the list. If the list is empty, throws an `IllegalStateException`.
+### Utility Methods
+- **`isPalindrome()`**: Checks if the list's sequence of elements is symmetric, meaning identical forwards and backwards. Returns `true` if the list is a palindrome, otherwise `false`.
+- **`print()`**: Prints the elements of the list in a readable format, each element followed by an arrow pointing to the next, ending with `null`.
 
-##### `peek()`, `peekFirst()`, `peekLast()`
-- `peek()` and `peekFirst()` retrieve, but do not remove, the first element of the list. Returns `null` if the list is empty.
-- `peekLast()` retrieves, but does not remove, the last element of the list. Returns `null` if the list is empty.
-
-##### `reverse()`
-Reverses the order of the elements in the list. If the list is empty, throws an `IllegalStateException`.
-
-##### `sort()`
-Sorts the elements of the list and returns a new instance of the sorted list. If the list is empty, throws an `IllegalStateException`.
-
-##### `isPalindrome()`
-Checks if the list is palindromic, meaning the sequence of elements is the same forwards and backwards. Returns `true` if the list is palindromic, otherwise returns `false`.
-
-##### `print()`
-Prints the elements of the list in a human-readable format, showing each element followed by an arrow pointing to the next element, ending with `null`.
-
-#### Customization
+### Customization
 
 The `SinglyLinkedList` can be further customized to offer more efficient operations specific to singly linked list structures, such as granular control over node manipulation or operations that take advantage of the inherent properties of singly linked lists. This customization makes it suitable for specific applications where typical array-based lists might not be as efficient.
+
