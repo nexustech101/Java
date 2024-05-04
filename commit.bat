@@ -1,3 +1,4 @@
+@echo off
 rem Batch script to initialize Git repository, commit changes, and push to GitHub
 
 rem Initialize Git repository
