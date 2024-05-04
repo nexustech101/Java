@@ -8,10 +8,10 @@ rem Add all files to the staging area
 git add .
 
 rem Commit changes with a default message
-git commit -m "Deleted batch script from repository commit"
+git commit -m "Initial commit"
 
-rem Set the remote origin
-git remote add origin https://github.com/nexustech101/Java/tree/main/Algorithms%20%26%20Data%20Structures.git
+rem Set the remote origin to the GitHub repository URL including the subdirectory path
+git remote add origin https://github.com/nexustech101/Java/tree/main/Algorithms%20%26%20Data%20Structures
 
 rem Pull changes from the main branch of the remote repository
 git pull origin main --allow-unrelated-histories
